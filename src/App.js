@@ -455,7 +455,7 @@ const AboutSection = () => {
             <div className="absolute inset-0 bg-gold/5 rounded-sm transform -rotate-3" />
             <div className="relative overflow-hidden rounded-sm">
               <img
-                src="/johannmintzimage.png=80&w=800&auto=format&fit=crop"
+                src="/johannmintzimage.png"
                 alt="Johann Mintz - Le Gestionnaire Privé"
                 className="w-full h-auto object-cover"
               />
