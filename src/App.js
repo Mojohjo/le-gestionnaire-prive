@@ -455,7 +455,7 @@ const AboutSection = () => {
             <div className="absolute inset-0 bg-gold/5 rounded-sm transform -rotate-3" />
             <div className="relative overflow-hidden rounded-sm">
               <img
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop"
+                src="/johannmintzimage.png=80&w=800&auto=format&fit=crop"
                 alt="Johann Mintz - Le Gestionnaire Privé"
                 className="w-full h-auto object-cover"
               />
@@ -481,7 +481,7 @@ const AboutSection = () => {
               Johann Mintz
             </h2>
             <p className="text-gold font-body mb-8">
-              Fondateur & Directeur Général
+              Entrepreneur
             </p>
 
             <div className="space-y-6 text-slate-300 font-body leading-relaxed">
@@ -498,15 +498,15 @@ const AboutSection = () => {
 
             <div className="flex flex-wrap gap-4 mt-10">
               <div className="bg-surface px-6 py-4 rounded-sm border border-gold/10">
-                <p className="text-gold font-heading text-2xl">200+</p>
+                <p className="text-gold font-heading text-2xl">1</p>
                 <p className="text-slate-400 text-sm">Clients accompagnés</p>
               </div>
               <div className="bg-surface px-6 py-4 rounded-sm border border-gold/10">
-                <p className="text-gold font-heading text-2xl">98%</p>
+                <p className="text-gold font-heading text-2xl">100%</p>
                 <p className="text-slate-400 text-sm">Taux de satisfaction</p>
               </div>
               <div className="bg-surface px-6 py-4 rounded-sm border border-gold/10">
-                <p className="text-gold font-heading text-2xl">5M€+</p>
+                <p className="text-gold font-heading text-2xl">100 000 Euros</p>
                 <p className="text-slate-400 text-sm">Trésorerie optimisée</p>
               </div>
             </div>
