@@ -1,0 +1,148 @@
+/* Main Application Styles for Le Gestionnaire Privé */
+
+/* Navbar glassmorphism */
+.navbar-glass {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background-color: rgba(10, 22, 40, 0.85);
+    border-bottom: 1px solid rgba(201, 169, 98, 0.1);
+}
+
+/* Hero section */
+.hero-gradient {
+    background: linear-gradient(135deg, rgba(10, 22, 40, 0.95) 0%, rgba(17, 31, 54, 0.9) 100%);
+}
+
+/* Service cards */
+.service-card {
+    background-color: #111F36;
+    border: 1px solid rgba(30, 41, 59, 0.5);
+    transition: border-color 0.5s ease, transform 0.3s ease;
+}
+
+.service-card:hover {
+    border-color: rgba(201, 169, 98, 0.5);
+    transform: translateY(-4px);
+}
+
+/* Gold button glow */
+.btn-gold {
+    background-color: #C9A962;
+    color: #0A1628;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 20px rgba(201, 169, 98, 0.2);
+}
+
+.btn-gold:hover {
+    background-color: #E5C585;
+    box-shadow: 0 0 30px rgba(201, 169, 98, 0.4);
+}
+
+/* Secondary button */
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid #C9A962;
+    color: #C9A962;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-outline:hover {
+    background-color: rgba(201, 169, 98, 0.1);
+}
+
+/* Form inputs */
+.input-dark {
+    background-color: #0A1628;
+    border: 1px solid #1E293B;
+    color: #F8FAFC;
+    border-radius: 2px;
+    padding: 0.75rem 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.input-dark:focus {
+    outline: none;
+    border-color: #C9A962;
+}
+
+.input-dark::placeholder {
+    color: #475569;
+}
+
+/* Section divider */
+.section-divider {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, #C9A962, transparent);
+}
+
+/* Methodology step line */
+.step-line {
+    width: 2px;
+    background: linear-gradient(180deg, #C9A962 0%, rgba(201, 169, 98, 0.2) 100%);
+}
+
+/* Number highlight */
+.number-highlight {
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(135deg, #E5C585 0%, #C9A962 50%, #A68A45 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Logo animation */
+.logo-hover {
+    transition: filter 0.3s ease;
+}
+
+.logo-hover:hover {
+    filter: brightness(1.2);
+}
+
+/* Smooth anchor links */
+a[href^="#"] {
+    scroll-behavior: smooth;
+}
+
+/* Focus states for accessibility */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid #C9A962;
+    outline-offset: 2px;
+}
+
+/* Loading spinner */
+.spinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid transparent;
+    border-top-color: currentColor;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Mobile menu animation */
+.mobile-menu-enter {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.mobile-menu-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
