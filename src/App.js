@@ -537,24 +537,22 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    try {
-      await axios.post(`${API}/contact`, formData);
-      setSubmitted(true);
-      toast.success("Votre demande a bien été envoyée. Nous vous contacterons sous 24h.");
-      setFormData({
-        name: "",
-        email: "",
-        company: "",
-        phone: "",
-        message: "",
-      });
-    } catch (error) {
-      console.error("Error submitting form:", error);
-      toast.error("Une erreur est survenue. Veuillez réessayer.");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+ try {
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  }
+
+  await fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: encode({ "form-name": "contact", ...formData })
+  });
+
+  setSubmitted(true);
+  toast.success("Demande envoyée ! Johann vous contactera sous 24h.");
+};
 
   return (
     <section
